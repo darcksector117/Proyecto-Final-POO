@@ -12,15 +12,10 @@ public class Naipe {
 	private Random  rnd = new Random();
 	
 	public int getValor(){
-		return valor=(int)(rnd.nextDouble()*12+0);
+		return valor=(int)(rnd.nextDouble()*13+0);
 	}
 	public int getFigura(){
 		return figura=(int)(rnd.nextDouble()*4+0);
-	}
-	
-	public static void main(String[] args) {
-		Naipe prueba=new Naipe();
-		System.out.println(prueba.toString());
 	}
 	public String toString(){
 		return valores[getValor()]+" de "+figuras[getFigura()];
@@ -28,4 +23,9 @@ public class Naipe {
 	/*public Image getImage(){
 	
 	}*/
+	
+	public static void main(String[] args) {
+		Naipe prueba=new Naipe();
+		System.out.println(prueba.toString());
+	}
 }
