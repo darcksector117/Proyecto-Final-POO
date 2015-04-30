@@ -5,7 +5,7 @@ public class Baraja {
 	private int posicion;
 	
 	public Baraja(){
-		this.posicion=posicion;
+		
 	}
 	
 	public void mezclar(){
