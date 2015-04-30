@@ -14,31 +14,4 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>src/Corazones</name>
-			<type>2</type>
-			<locationURI>PROJECT_LOC/Cartas/Corazones</locationURI>
-		</link>
-		<link>
-			<name>src/Diamante</name>
-			<type>2</type>
-			<locationURI>PROJECT_LOC/Cartas/Diamante</locationURI>
-		</link>
-		<link>
-			<name>src/Fondo_carta.png</name>
-			<type>1</type>
-			<locationURI>PROJECT_LOC/Cartas/Fondo_carta.png</locationURI>
-		</link>
-		<link>
-			<name>src/Picas</name>
-			<type>2</type>
-			<locationURI>PROJECT_LOC/Cartas/Picas</locationURI>
-		</link>
-		<link>
-			<name>src/Trebol</name>
-			<type>2</type>
-			<locationURI>PROJECT_LOC/Cartas/Trebol</locationURI>
-		</link>
-	</linkedResources>
 </projectDescription>
