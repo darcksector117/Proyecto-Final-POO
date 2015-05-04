@@ -16,13 +16,16 @@ public class Naipe {
 	private Random rnd = new Random();
     public String BARAJA_FILE = "baraja.txt";
 
-    private int figura=(int)(rnd.nextDouble()*4+0);
-	private int valor=(int)(rnd.nextDouble()*13+0);
+    private int figura;
+	private int valor;
 
 	private int pos_naipe;
 	private String path;
 
     public Naipe(){
+
+        set_valor();
+        set_figura();
 
         pos_naipe = valor + (figura * 13);
         //  If file does not exist create it
@@ -31,7 +34,7 @@ public class Naipe {
             gen_naipe_file();
         }
 
-		// Load the file into the naipeImg array
+        // Load the file into the naipeImg array
         read_baraja();
 
 		// Delete the card you chose
@@ -39,6 +42,17 @@ public class Naipe {
 
     }
 
+    public void set_figura(){
+        this.figura=(int)(rnd.nextDouble()*4+0);
+    }
+
+    public void set_valor(){
+	    this.valor=(int)(rnd.nextDouble()*13+0);
+    }
+
+    public int get_pos(){
+        return pos_naipe;
+    }
     private void delete_card(){
 
 		try {
@@ -127,7 +141,6 @@ public class Naipe {
 
     }
 	public ImageIcon getImage(){
-		System.out.println(pos_naipe);
 		if (naipesImg[pos_naipe] != null){
 			return naipesImg[pos_naipe];
 		}
