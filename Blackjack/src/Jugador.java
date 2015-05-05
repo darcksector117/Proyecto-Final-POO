@@ -1,4 +1,3 @@
-package blacjack;
 
 public class Jugador{
 
