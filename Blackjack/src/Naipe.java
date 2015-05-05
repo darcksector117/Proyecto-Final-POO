@@ -1,4 +1,3 @@
-package blacjack;
 
 import javax.swing.ImageIcon;
 
