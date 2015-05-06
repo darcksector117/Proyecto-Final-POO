@@ -48,13 +48,14 @@ public class Jugador{
 
 
 	public static void main(String[] args) {
-
+/*
         Jugador[] players = new Jugador[2];
         System.out.println(Integer.toString(players.length));
         for ( int cont = 0 ; cont < players.length ; cont ++){
             players[cont] = new Jugador();
             System.out.println(players[cont].get_nombre());
         }
-
+*/
     }
+    
 }

@@ -1,26 +1,36 @@
 
 import java.util.Scanner;
 
+import javax.swing.JOptionPane;
+
+import jdk.nashorn.internal.scripts.JO;
+
 
 
 
 public class main_class{
 
 	public static void main(String[] args) {
+		
+		MyFrame ventana=new MyFrame("interfaz");
+		ventana.setVisible(true);
 
         Baraja baraja = new Baraja();
 
         // Ask the number of players
-        Scanner user_input = new Scanner(System.in);
+        //Scanner user_input = new Scanner(System.in);
         
-        System.out.println("Number of players");
-        int number_players = Integer.parseInt(user_input.next());
+        
+        //System.out.println("Number of players");
+        //int number_players = Integer.parseInt(user_input.next());
+        int number_players = Integer.parseInt(JOptionPane.showInputDialog("Number of players:"));
 
         
         
         // Ask the apuesta
-        System.out.println("Apuesta");
-        int apuesta = Integer.parseInt(user_input.next());
+        //System.out.println("Apuesta");
+        //int apuesta = Integer.parseInt(user_input.next());
+        int apuesta = Integer.parseInt(JOptionPane.showInputDialog("Apuesta:"));
         
         
         if (number_players > 4){
@@ -38,11 +48,11 @@ public class main_class{
 
        // Ask the name of players
         for (int cont = 0 ; cont < players.length; cont ++ ){
-            System.out.println("Name of Player : " + cont);
-            players[cont].set_nombre(user_input.next());
+            //System.out.println("Name of Player : " + cont);
+            players[cont].set_nombre(JOptionPane.showInputDialog("Name of Player : " + (cont+1)));
 
-            System.out.println("Saldo inicial: " + cont);
-            players[cont].set_saldo(Integer.parseInt(user_input.next()));
+            //System.out.println("Saldo inicial: " + cont);
+            players[cont].set_saldo(Integer.parseInt(JOptionPane.showInputDialog("Saldo inicial: " + (cont+1))));
         }
 
         //Give cards

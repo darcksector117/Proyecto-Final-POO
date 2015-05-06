@@ -5,7 +5,7 @@ import java.awt.event.*;
 
 public class MyFrame extends JFrame implements ActionListener {
 
-	private JPanel figuras,botones, radioButtons;
+	private JPanel figuras,botones,radioButtons,cartas;
 	private FlowLayout flowlayout;
 	private FileWriter filewriter;
 	private PrintWriter printwriter;
@@ -14,6 +14,7 @@ public class MyFrame extends JFrame implements ActionListener {
 	private String hex,color,figura;
 	private JButton open;
 	private JButton save;
+	private JButton carta1, carta2, carta3, carta4;
 	private JFileChooser chooser, chooser2;
 	private String linea;
 	private String camino;
@@ -52,10 +53,8 @@ public class MyFrame extends JFrame implements ActionListener {
 		
 		this.add(botones, BorderLayout.NORTH);
 		//this.add(pd, BorderLayout.CENTER);
-	
 		
-
-
+		
 	}
 	
 	@Override
