@@ -8,7 +8,7 @@ public class Naipe {
     
     public static final String[] valores={"As","2","3","4","5","6","7","8","9","10","Joker","Reina","Rey"};
     public static final String[] figuras={"Corazones","Diamantes","Picas","Treboles"};
-    public static final Image[] naipesImg=new Image[52];
+    public static final Image[] naipesImg=new Image[53];
             
     public ImageIcon imagen =new ImageIcon();
     private Random rnd = new Random();
@@ -28,13 +28,13 @@ public class Naipe {
 		for(int i=0; i<=12; i++){
 			naipesImg[i]=new ImageIcon("Cartas/Corazones/"+(i+1)+".png").getImage();
 		}
-		for(int i=0; i<=12; i++){
+		for(int i=13; i<=25; i++){
 			naipesImg[i]=new ImageIcon("Cartas/Diamante/"+(i+1)+".png").getImage();
 		}
-		for(int i=0; i<=12; i++){
+		for(int i=26; i<=38; i++){
 			naipesImg[i]=new ImageIcon("Cartas/Picas/"+(i+1)+".png").getImage();
 		}
-		for(int i=0; i<=12; i++){
+		for(int i=39; i<=52; i++){
 			naipesImg[i]=new ImageIcon("Cartas/Trebol/"+(i+1)+".png").getImage();
 		}
 	}
@@ -43,19 +43,19 @@ public class Naipe {
     	valor=(int)(rnd.nextDouble()*13+0);
         figura=(int)(rnd.nextDouble()*4+0);
         
-        System.out.println(valor);
-        System.out.println(figura);
+        System.out.println("valor: "+valor);
+        System.out.println("figura: "+figura);
         
-    	if(figura==1){
+    	if(figura==0){
     		return carta=naipesImg[valor];
     	}
-    	else if(figura==2){
+    	else if(figura==1){
     		return carta=naipesImg[valor*2];
     	}
-    	else if(figura==3){
+    	else if(figura==2){
     		return carta=naipesImg[valor*3];
     	}
-    	else if(figura==4){
+    	else if(figura==3){
     		return carta=naipesImg[valor*4];
     	}
     	else{
