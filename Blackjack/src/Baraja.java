@@ -2,7 +2,6 @@ import java.util.Random;
 import java.io.BufferedReader;
 import javax.swing.ImageIcon;
 import java.io.*;
-import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 

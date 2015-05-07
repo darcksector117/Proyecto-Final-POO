@@ -16,6 +16,8 @@ public class main_class{
 		ventana.setVisible(true);
 
         Baraja baraja = new Baraja();
+        //Naipe naipe=new Naipe();
+        //System.out.println(naipe.getCarta());
 
         // Ask the number of players
         //Scanner user_input = new Scanner(System.in);

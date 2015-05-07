@@ -5,7 +5,7 @@ import java.awt.event.*;
 
 public class MyFrame extends JFrame implements ActionListener {
 
-	private JPanel figuras,botones,radioButtons,cartas;
+	private JPanel figuras,botones,radioButtons;
 	private FlowLayout flowlayout;
 	private FileWriter filewriter;
 	private PrintWriter printwriter;
@@ -14,7 +14,7 @@ public class MyFrame extends JFrame implements ActionListener {
 	private String hex,color,figura;
 	private JButton open;
 	private JButton save;
-	private JButton carta1, carta2, carta3, carta4;
+	private JButton carta1;
 	private JFileChooser chooser, chooser2;
 	private String linea;
 	private String camino;

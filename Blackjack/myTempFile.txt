@@ -1,6 +1,7 @@
 0,Blackjack/Cartas/Corazones/1.png
 13,Blackjack/Cartas/Diamantes/1.png
 26,Blackjack/Cartas/Picas/1.png
+39,Blackjack/Cartas/Treboles/1.png
 1,Blackjack/Cartas/Corazones/2.png
 14,Blackjack/Cartas/Diamantes/2.png
 27,Blackjack/Cartas/Picas/2.png
@@ -19,7 +20,6 @@
 43,Blackjack/Cartas/Treboles/5.png
 5,Blackjack/Cartas/Corazones/6.png
 18,Blackjack/Cartas/Diamantes/6.png
-31,Blackjack/Cartas/Picas/6.png
 44,Blackjack/Cartas/Treboles/6.png
 6,Blackjack/Cartas/Corazones/7.png
 19,Blackjack/Cartas/Diamantes/7.png
